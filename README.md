@@ -16,4 +16,4 @@ This project analyzes employee performance using Excel Pivot Tables, Charts, and
 - GitHub Pages
 
 ## Dashboard Preview
-![Dashboard](Dashboard.png)
+![Dashboard](dashboard.png)
