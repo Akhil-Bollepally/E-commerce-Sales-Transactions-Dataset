@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Employee Performance Dashboard</title>
 
-  <!-- Power BI style font -->
+  <!-- Power BI font -->
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -17,12 +17,16 @@
 
     /* HEADER */
     .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       max-width: 1200px;
       margin: 20px auto 10px auto;
       padding: 0 15px;
+      text-align: center;
+    }
+
+    .title-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
     }
 
     .header h1 {
@@ -59,7 +63,7 @@
       background: #005a9e;
     }
 
-    /* IMAGE */
+    /* CONTENT */
     .content {
       max-width: 1200px;
       margin: auto;
@@ -111,10 +115,8 @@
 
     /* MOBILE VIEW */
     @media (max-width: 768px) {
-      .header {
+      .title-wrap {
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
       }
 
       .header h1 {
@@ -123,8 +125,7 @@
       }
 
       .btn {
-        width: 100%;
-        max-width: 220px;
+        width: 200px;
         justify-content: center;
       }
     }
@@ -135,17 +136,17 @@
 
   <!-- HEADER -->
   <div class="header">
-      <div class="title-wrap">
-    <h1>📊 Employee Performance Dashboard</h1>
-    <button class="btn" onclick="openVideo()">▶ View Video</button>
-  </div>
+    <div class="title-wrap">
+      <h1>📊 Employee Performance Dashboard</h1>
+      <button class="btn" onclick="openVideo()">▶ View Video</button>
+    </div>
   </div>
 
   <div class="subtitle">
     Excel Dashboard deployed using GitHub Pages
   </div>
 
-  <!-- IMAGE CONTENT -->
+  <!-- IMAGE -->
   <div class="content">
     <img src="dashboard.png" alt="Dashboard Preview">
   </div>
